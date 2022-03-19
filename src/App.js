@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './index.css';
+
+const  name = 'Md Touhidul Islam'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Person name="sheikh robin" from="Bangladesh" future="developer"></Person>
+    <Friend></Friend>
+   
+  
+    
+    
+     
     </div>
   );
 }
 
 export default App;
+
+
+function Person  (props)  {
+console.log(props);
+  return (
+
+    <div className="person">
+      <h1>{name} </h1>
+      <h2>{props.name}</h2>
+      <h2>{props.from}</h2>
+      <h2>{props.future}</h2>
+      <h1>Get well soon</h1>
+    </div>
+  );
+}
+function Friend  ()  {
+
+  return (
+
+    <div className="person">
+      <h1>{name} </h1>
+      <h1>Good boy</h1>
+    </div>
+  );
+}
